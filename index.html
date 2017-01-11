@@ -1,0 +1,271 @@
+<html>
+<head>
+  <title>Scratchable Turntable</title>
+
+  <meta name="description" content="Scratchable vinyl turntable implemented in pure vanilla javascript with SVG graphics.">
+  <meta name="author" content="Jeff Smith">
+  
+  <link href="./record.css" rel="stylesheet">
+</head>
+<body>
+  <div class="text-div">
+    click and drag record to scratch<br />
+    (make sure your sound is on)
+  </div>
+  <svg width="512px" viewBox="0 0 512 512" id="record_svg">
+      <g>
+        <g id="record_group">
+        <circle
+           r="256"
+           transform="scale(1,-1)"
+           cy="-256"
+           cx="256"
+           style="fill:#000000;fill-opacity:1" />
+        <path
+           d="m 343,256 a 87,87 0 0 1 -87,87 87,87 0 0 1 -87,-87 87,87 0 0 1 87,-87 87,87 0 0 1 87,87 z"
+           style="fill:#ffd42a;fill-opacity:1;stroke:none;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none" />
+        <circle
+           style="fill:none;fill-opacity:1;stroke:#ffcc00;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none"
+           cx="256"
+           cy="256"
+           r="72" />
+        <path
+           d="m 270,256 a 14,14 0 0 1 -14,14 14,14 0 0 1 -14,-14 14,14 0 0 1 14,-14 14,14 0 0 1 14,14 z"
+           style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none" />
+        <text
+           id="text4175"
+           y="225.5"
+           x="212.80206"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Futura;-inkscape-font-specification:'Futura Bold'"
+             y="225.5"
+             x="219.91144">Blank.js</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="210.76865"
+           y="290.0"><tspan
+             x="210.76865"
+             y="290.0"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5px;font-family:Futura;-inkscape-font-specification:'Futura Bold'">DJ JavaScript</tspan></text>
+        <text
+           y="305.0"
+           x="208.4707"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:10px;line-height:125%;font-family:Futura;-inkscape-font-specification:'Futura Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           xml:space="preserve"><tspan
+             y="305.0"
+             x="208.4707">ECMAScript Records</tspan></text>
+        </g>
+        <g>
+          <path
+             style="fill:none;fill-opacity:1;stroke:#cccccc;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none"
+             d="m 60,256 c 6e-6,-108.24781 87.75219,-195.99999 196,-195.99999" />
+          <path
+             style="fill:none;fill-opacity:1;stroke:#cccccc;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none"
+             d="m 100,256 c 0,-86.15642 69.84358,-156 156,-156" />
+          <path
+             style="fill:none;fill-opacity:1;stroke:#cccccc;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none"
+             d="m 128,256 c 0,-70.69245 57.30755,-128 128,-128" />
+        </g>
+        <g
+           style="stroke:#666666"
+           transform="matrix(-1,0,0,-1,512,1052.36222)">
+          <path
+             d="m 60,796.36217 c 6e-6,-108.24781 87.75219,-195.99999 196,-195.99999"
+             style="fill:none;fill-opacity:1;stroke:#666666;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none" />
+          <path
+             d="m 100,796.36218 c 0,-86.15642 69.84358,-156 156,-156"
+             style="fill:none;fill-opacity:1;stroke:#666666;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none" />
+          <path
+             d="m 128,796.36218 c 0,-70.69245 57.30755,-128 128,-128"
+             style="fill:none;fill-opacity:1;stroke:#666666;stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none" />
+        </g>
+        <g id="surface_group">
+            <path
+               style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+               d="m 225,92 17,53" />
+            <path
+               style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+               d="m 442,288 18,4" />
+            <path
+               style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+               d="m 112,238 -62,-8" />
+          <g transform="matrix(1,0,0,-1,0,1052.36224)">
+            <path
+               d="m 282,912.36216 5,18"
+               style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+            <path
+               d="m 352,958.36216 8,13"
+               style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+            <path
+               d="m 112,778.36216 -62,-8"
+               style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+          </g>
+        </g>
+      </g>
+  </svg>
+
+  <script>
+    const frequencyBase = 560.0;
+    const frequencyThreshold = 5.0;
+    const frequencyStep = 100.0;
+    const gainOffValue = 0.00001;
+    const vinylGainValue = 0.2;
+    const oscillatorGainValue = 0.15;
+
+    let currentFrequency = frequencyBase;
+    let scratching = false;
+    let record;
+    let recordGroup;
+    let surfaceGroup;
+    let angle = 0;
+    let rotationStart = 0;
+    let rotationOffset = 0;
+    let lastX = 0;
+    let lastY = 0;
+    let size = 512;
+
+    let context;
+    let oscillator;
+    let vinylGain;
+    let oscillatorGain;
+
+    function onMouseDown(ev) {
+      vinylGain.gain.value = gainOffValue;
+      scratching = true;
+      lastX = ev.offsetX;
+      lastY = ev.offsetY;
+    }
+
+    function onMouseUp() {
+      oscillatorGain.gain.cancelScheduledValues(context.currentTime);
+      oscillatorGain.gain.value = gainOffValue;
+      vinylGain.gain.value = vinylGainValue;
+      scratching = false;
+      rotationOffset = angle;
+      rotationStart = -1;
+      rotateRecord();
+    }
+
+    function onMouseMove(ev) {
+      if (scratching) {
+        oscillatorGain.gain.cancelScheduledValues(context.currentTime);
+
+        const deltaX = ev.offsetX - lastX;
+        const deltaY = ev.offsetY - lastY;
+
+        let rotation = 0;
+        let frequency = frequencyBase;
+        if (Math.abs(deltaX) > Math.abs(deltaY)) {
+          const direction = ev.offsetY > size / 2.0 ? -1.0 : 1.0;
+          rotation = (deltaX / size) * 180.0 * direction;
+          frequency += (Math.abs(deltaX) - frequencyThreshold) * frequencyStep;
+        } else {
+          const direction = ev.offsetX > size / 2.0 ? 1.0 : -0.5;
+          rotation = (deltaY / size) * 180.0 * direction;
+          frequency += (Math.abs(deltaY) - frequencyThreshold) * frequencyStep;
+        }
+
+        oscillator.frequency.exponentialRampToValueAtTime(frequency, context.currentTime + 0.02)
+        oscillatorGain.gain.value = oscillatorGainValue;
+
+        angle += rotation;
+        recordGroup.setAttribute('transform', 'rotate(' + angle + ', 256, 256)');
+        surfaceGroup.setAttribute('transform', 'rotate(' + angle + ', 256, 256)');
+
+        oscillatorGain.gain.setValueAtTime(gainOffValue, context.currentTime + 0.06);
+
+        lastX = ev.offsetX;
+        lastY = ev.offsetY;
+      }
+    }
+
+    function rotateRecord(timestamp) {
+      if (!scratching) {
+        if (timestamp >= 0) {
+          if (rotationStart < 0) {
+            rotationStart = timestamp;
+          }
+
+          angle = (((timestamp - rotationStart) / 5.0) % 360.0) + rotationOffset;
+          recordGroup.setAttribute('transform', 'rotate(' + angle + ', 256, 256)');
+          surfaceGroup.setAttribute('transform', 'rotate(' + angle + ', 256, 256)');
+        }
+        window.requestAnimationFrame(rotateRecord);
+      }
+    }
+
+    (function() {
+      context = new AudioContext();
+
+      // setup 2-channel audio for simulated vinyl "silence"
+      const numChannels = 2;
+
+      // set frame count to equivalent of one rotation at 33 rpm
+      const frameCount = context.sampleRate * 1.8;
+
+      // audio data buffer
+      let dataBuffer = context.createBuffer(numChannels, frameCount, context.sampleRate);
+
+      // create audio data: channel 0 - white noise, channel 1 - pops
+      let channelData0 = dataBuffer.getChannelData(0);
+      let channelData1 = dataBuffer.getChannelData(1);
+
+      let popCount = 0; // only used for channel 1
+
+      for (let i = 0; i < frameCount; i++) {
+        const rVal = Math.random() * 0.05 - 0.025;
+
+        channelData0[i] = i < frameCount / 2.0 ? rVal * 0.8 : rVal;
+        channelData1[i] = popCount < 3 && Math.abs(rVal) > 0.0249975 ? (rVal < 0 ? -0.9 : 0.9) : 0.0;
+      }
+
+      // create AudioBufferSourceNode and set data buffer
+      let vinylSource = context.createBufferSource();
+      vinylSource.buffer = dataBuffer;
+
+      // create gain for vinyl audio and connect
+      vinylGain = context.createGain();
+      vinylGain.gain.value = vinylGainValue;
+
+      vinylSource.connect(vinylGain);
+      vinylGain.connect(context.destination);
+      vinylSource.loop = true;
+
+      vinylSource.start();
+
+      // setup oscillator for "scratching" sounds
+      oscillator = context.createOscillator();
+      oscillator.frequency.value = frequencyBase;
+      oscillator.type = 'sawtooth';
+
+      oscillatorGain = context.createGain();
+      oscillatorGain.gain.value = gainOffValue;
+
+      oscillator.connect(oscillatorGain);
+      oscillatorGain.connect(context.destination);
+      oscillator.start();
+
+      // start record svg rotation
+      record = document.getElementById('record_svg');
+      recordGroup = document.getElementById('record_group');
+      surfaceGroup = document.getElementById('surface_group');
+      rotateRecord(0);
+
+      // register events
+      if(window.PointerEvent) {
+        record.addEventListener('pointerdown', onMouseDown);
+        document.addEventListener('pointerup', onMouseUp);
+        document.addEventListener('pointermove', onMouseMove);
+      }
+      else {
+        // provide fallback if pointer events are not supported
+        record.addEventListener('mousedown', onMouseDown);
+        document.addEventListener('mouseup', onMouseUp);
+        document.addEventListener('mousemove', onMouseMove);
+      }
+    })();
+  </script>
+</body>
+</html>

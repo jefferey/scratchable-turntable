@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.text-div {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#record_svg {
+  display: block;
+  width: 512px;
+  margin: 20px auto;
+  cursor: pointer; cursor: hand;
+  user-select: none;
+}
