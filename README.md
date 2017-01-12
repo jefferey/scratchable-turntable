@@ -1,2 +1,4 @@
 # scratchable-turntable
-Scratchable vinyl turntable implemented in pure vanilla javascript with SVG graphics.
+A spinning vinyl record that you can scratch like a DJ.  Listen to the familiar hiss and pops of vinyl while it spins, then grab hold and scratch away like your favorite turntablist.
+
+Made with plain vanilla javascript (web audio api) and svg graphics. No libraries or sound/image files.
